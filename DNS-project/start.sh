@@ -1,0 +1,1 @@
+python app.py runserver >/dev/null 2>&1 &
