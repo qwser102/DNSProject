@@ -29,11 +29,12 @@ options {
  
 	allow-query     { any; };       # 修改允许所有节点访问
 
-        forwarders {
-            8.8.8.8;
-            8.8.4.4;
-        };			# 添加上游dns服务器
-        forward first;		# 设置转发优先，支持forward only和forward first两种模式
+	forwarders {
+		8.8.8.8;
+		8.8.4.4;
+	};			# 添加上游dns服务器
+	
+	forward first;		# 设置转发优先，支持forward only和forward first两种模式
 
    ...
    }
